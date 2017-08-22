@@ -1,7 +1,8 @@
 # Design Patterns for Go
-
-[![Build Status](https://travis-ci.org/bvwells/go-patterns.svg?branch=master)](https://travis-ci.org/bvwells/go-patterns) 
+ 
 [![GoDoc](http://godoc.org/github.com/bvwells/go-patterns?status.svg)](http://godoc.org/github.com/bvwells/go-patterns)
+[![Build Status](https://travis-ci.org/bvwells/go-patterns.svg?branch=master)](https://travis-ci.org/bvwells/go-patterns)
+[![Build status](https://ci.appveyor.com/api/github/webhook?id=fkox103f65lsubu8?svg=true)](https://ci.appveyor.com/project/bvwells/go-patterns)
 
 Design patterns for the Go programming language.
 
