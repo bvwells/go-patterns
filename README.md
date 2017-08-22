@@ -36,3 +36,7 @@ Structural | [`github.com/bvwells/go-patterns/structural`][structural-ref] |
 The most recent major version of Go is supported. You can see which versions are
 currently supported by looking at the lines following `go:` in
 [`.travis.yml`](.travis.yml).
+
+
+[creational-ref]: https://godoc.org/github.com/bvwells/go-patterns/creational
+[structural-ref]: https://godoc.org/github.com/bvwells/go-patterns/structural
