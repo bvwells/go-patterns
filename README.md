@@ -24,8 +24,12 @@ Documentation and examples are available at qhttp://godoc.org/github.com/bvwells
 
 Pattern    | Package                                   | Description
 -----------|-------------------------------------------|------------
-Creational | github.com/bvwells/go-patterns/creational | 
-Structural | github.com/bvwells/go-patterns/structural | 
+Creational | [`github.com/bvwells/go-patterns/creational`][creational-ref] | 
+Structural | [`github.com/bvwells/go-patterns/structural`][structural-ref] | 
+
+## Creational [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/creational?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/creational)
+
+## Structural [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/structural?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/structutal)
 
 ## Go Versions Supported
 
