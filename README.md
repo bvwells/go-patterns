@@ -52,7 +52,6 @@ Composite |
 Decorator |
 Facade |
 Flyweight |
-Private Class Data |
 Proxy |
 
 ## Behavioral [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/behavioral?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/behavioral)
