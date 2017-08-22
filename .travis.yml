@@ -13,6 +13,5 @@ install:
   
 script:
  - go vet ./...
- - diff <(goimports -d .) <(printf "")
  - diff <(golint ./...) <(printf "")
   
