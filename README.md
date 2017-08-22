@@ -26,10 +26,13 @@ Pattern    | Package                                   | Description
 -----------|-------------------------------------------|------------
 Creational | [`github.com/bvwells/go-patterns/creational`][creational-ref] | 
 Structural | [`github.com/bvwells/go-patterns/structural`][structural-ref] | 
+Behavioral | [`github.com/bvwells/go-patterns/behavioral`][behavioral-ref] | 
 
 ## Creational [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/creational?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/creational)
 
 ## Structural [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/structural?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/structutal)
+
+## Behavioral [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/behavioral?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/behavioral)
 
 ## Go Versions Supported
 
@@ -40,3 +43,4 @@ currently supported by looking at the lines following `go:` in
 
 [creational-ref]: https://godoc.org/github.com/bvwells/go-patterns/creational
 [structural-ref]: https://godoc.org/github.com/bvwells/go-patterns/structural
+[behavioral-ref]: https://godoc.org/github.com/bvwells/go-patterns/behavioral
