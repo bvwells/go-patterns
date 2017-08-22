@@ -18,6 +18,9 @@ $ go get -u github.com/bvwells/go-patterns/...
 Documentation and examples are available at qhttp://godoc.org/github.com/bvwells/go-patterns
 
  * [Design Patterns](#design-patterns)
+ * [Creational](#creational)
+ * [Structural](#structural)
+ * [Behavioral](#behavioral)
  * [Go Versions Supported](#go-versions-supported)
 
 ## Design Patterns
@@ -39,7 +42,6 @@ Behavioral | [`github.com/bvwells/go-patterns/behavioral`][behavioral-ref] |
 The most recent major version of Go is supported. You can see which versions are
 currently supported by looking at the lines following `go:` in
 [`.travis.yml`](.travis.yml).
-
 
 [creational-ref]: https://godoc.org/github.com/bvwells/go-patterns/creational
 [structural-ref]: https://godoc.org/github.com/bvwells/go-patterns/structural
