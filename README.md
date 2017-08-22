@@ -46,13 +46,13 @@ Singleton | Ensure a class has only one instance, and provide a global point of 
 
 Name       | Description
 -----------|-------------------------------------------
-Adaptor |
-Bridge |
-Composite |
-Decorator |
-Facade |
-Flyweight |
-Proxy |
+Adaptor | Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator.
+Bridge | Decouple an abstraction from its implementation allowing the two to vary independently.
+Composite | Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+Decorator | Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality.
+Facade | Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+Flyweight | Use sharing to support large numbers of similar objects efficiently.
+Proxy | Provide a surrogate or placeholder for another object to control access to it.
 
 ## Behavioral [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/behavioral?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/behavioral)
 
