@@ -15,6 +15,8 @@ To install the packages on your system,
 $ go get -u github.com/bvwells/go-patterns/...
 ```
 
+Documentation and examples are available at qhttp://godoc.org/github.com/bvwells/go-patterns
+
  * [Design Patterns](#design-patterns)
  * [Go Versions Supported](#go-versions-supported)
 
