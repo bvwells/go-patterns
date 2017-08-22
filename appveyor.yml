@@ -1,0 +1,19 @@
+version: "{build}"
+
+os: Windows Server 2012 R2
+
+clone_folder: c:\gopath\src\github.com\bvwells\go-patterns
+
+environment:
+  GOPATH: c:\gopath
+
+install:
+  - echo %PATH%
+  - echo %GOPATH%
+  - go version
+  - go env
+  - go get -d ./...
+
+build_script:
+ - go test -v -cpu=2 ./...
+ - go test -cpu=1,2,4 -short -race ./...
