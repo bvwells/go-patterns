@@ -15,7 +15,7 @@ To install the packages on your system,
 $ go get -u github.com/bvwells/go-patterns/...
 ```
 
-Documentation and examples are available at qhttp://godoc.org/github.com/bvwells/go-patterns
+Documentation and examples are available at http://godoc.org/github.com/bvwells/go-patterns
 
  * [Design Patterns](#design-patterns)
  * [Creational](#creational)
@@ -33,9 +33,44 @@ Behavioral | [`github.com/bvwells/go-patterns/behavioral`][behavioral-ref] |
 
 ## Creational [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/creational?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/creational)
 
+Name       | Description
+-----------|-------------------------------------------
+Abstract Factory |
+Builder | 
+Factory Method |
+Object Pool |
+Prototype |
+Singleton |
+
 ## Structural [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/structural?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/structutal)
 
+Name       | Description
+-----------|-------------------------------------------
+Adaptor |
+Bridge |
+Composite |
+Decorator |
+Facade |
+Flyweight |
+Private Class Data |
+Proxy |
+
 ## Behavioral [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/behavioral?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/behavioral)
+
+Name       | Description
+-----------|-------------------------------------------
+Chain of Responsibility |
+Command |
+Interpretor |
+Iterator |
+Mediator |
+Memento |
+Null Object |
+Observer |
+State | 
+Strategy |
+Template Method |
+Visitor |
 
 ## Go Versions Supported
 
