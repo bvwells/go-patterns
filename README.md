@@ -3,6 +3,7 @@
 [![GoDoc](http://godoc.org/github.com/bvwells/go-patterns?status.svg)](http://godoc.org/github.com/bvwells/go-patterns)
 [![Build Status](https://travis-ci.org/bvwells/go-patterns.svg?branch=master)](https://travis-ci.org/bvwells/go-patterns)
 [![Build status](https://ci.appveyor.com/api/projects/status/ea2u4hpy555b6ady?svg=true)](https://ci.appveyor.com/project/bvwells/go-patterns)
+[[https://codecov.io/gh/bwells/go-patterns][https://codecov.io/gh/bwells/go-patterns/branch/master/graph/badge.svg]]
 
 Design patterns for the Go programming language.
 
