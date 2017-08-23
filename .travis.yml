@@ -6,7 +6,8 @@ os:
 go: 1.8
 
 install:
-  - go get -v -t <(go list .\... | grep -v vendor)
+  - go get -v -t .
+  - go get -u github.com/stretchr/testify/assert
   - go get -u github.com/golang/lint/golint
   - go get -u golang.org/x/tools/cmd/goimports
   
