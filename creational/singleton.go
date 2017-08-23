@@ -1,7 +1,7 @@
 package creational
 
 import (
-    "sync"
+	"sync"
 )
 
 // Singleton deacribes a struct of which only a single
@@ -16,8 +16,8 @@ var once sync.Once
 // struct singleton gets created and provides a global point
 // to access to it.
 func GetInstance() *Singleton {
-    once.Do(func() {
-        instance = &Singleton{}
-    })
-    return instance
+	once.Do(func() {
+		instance = &Singleton{}
+	})
+	return instance
 }
