@@ -1,10 +1,12 @@
 package creational
 
-import "sync"
+import (
+	"sync"
+)
 
 // Pool represents the pool of objects to use.
 type Pool struct {
-	*sync.Mutex
+	sync.Mutex
 	inuse     []interface{}
 	available []interface{}
 	new       func() interface{}
@@ -25,7 +27,7 @@ func (p *Pool) Acquire() interface{} {
 		p.available = append(p.available[:0], p.available[1:]...)
 		p.inuse = append(p.inuse, object)
 	} else {
-		object := p.new()
+		object = p.new()
 		p.inuse = append(p.inuse, object)
 	}
 	p.Unlock()
