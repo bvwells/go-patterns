@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// Shape is an interface for interacting with a shape.
 type Shape interface {
 	Draw()
 }
@@ -36,6 +37,8 @@ func (r *rectangle) Draw() {
 	fmt.Printf("I am a rectangle.")
 }
 
+// ShapeFactory is an interface for a factory which can be used
+// to create curved and straight shapes. 
 type ShapeFactory interface {
 	CreateCurvedShape() Shape
 	CreateStraightShape() Shape
@@ -44,6 +47,7 @@ type ShapeFactory interface {
 type simpleShapeFactory struct {
 }
 
+// NewSimpleShapeFactory creates a new simpleShapeFactory.
 func NewSimpleShapeFactory() ShapeFactory {
 	return &simpleShapeFactory{}
 }
@@ -59,6 +63,7 @@ func (s *simpleShapeFactory) CreateStraightShape() Shape {
 type robustShapeFactory struct {
 }
 
+// NewRobustShapeFactory creates a new robustShapeFactory.
 func NewRobustShapeFactory() ShapeFactory {
 	return &robustShapeFactory{}
 }
