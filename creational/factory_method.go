@@ -8,6 +8,7 @@ import (
 
 var outputWriter io.Writer = os.Stdout // modified during testing
 
+// StoogeType is used as a enum for stooge types.
 type StoogeType int
 
 const (
