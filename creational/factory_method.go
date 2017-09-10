@@ -12,31 +12,34 @@ const (
 	Curly
 )
 
+// Stooge provides an interface for interacting with stooges.
 type Stooge interface {
-	slap_stick()
+	SlapStick()
 }
 
 type larry struct {
 }
 
-func (s *larry) slap_stick() {
-	fmt.Print("Larry: poke eyes\n")
+func (s *larry) SlapStick() {
+	fmt.Print("Larry: Poke eyes\n")
 }
 
 type moe struct {
 }
 
-func (s *moe) slap_stick() {
-	fmt.Printf("Moe: slap head\n")
+func (s *moe) SlapStick() {
+	fmt.Printf("Moe: Slap head\n")
 }
 
 type curly struct {
 }
 
-func (s *curly) slap_stick() {
-	fmt.Printf("Curly: suffer abuse\n")
+func (s *curly) SlapStick() {
+	fmt.Printf("Curly: Suffer abuse\n")
 }
 
+// NewStooge creates new stooges given the stooge type.
+// Nil is returned if the stooge type is not recognised.
 func NewStooge(stooge StoogeType) Stooge {
 	if stooge == Larry {
 		return &larry{}
