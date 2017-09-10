@@ -3,8 +3,8 @@ package creational
 import (
 	"testing"
 
-	"github.com/stretchr/testify/assert"
 	"bytes"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestNewStooge_WhenStoogeTypeIsLarry_ReturnsLarry(t *testing.T) {
