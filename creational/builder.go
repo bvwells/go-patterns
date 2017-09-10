@@ -24,7 +24,7 @@ func (d *Director) Construct() {
 	d.builder.Build()
 }
 
-// Build is an interface for building.
+// Builder is an interface for building.
 type Builder interface {
 	Build()
 }
