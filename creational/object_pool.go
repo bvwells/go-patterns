@@ -2,33 +2,30 @@ package creational
 
 import "sync"
 
-// PoolObject represents the object to be stored in the Pool.
-type PoolObject struct {
-}
-
 // Pool represents the pool of objects to use.
 type Pool struct {
 	*sync.Mutex
-	inuse     []*PoolObject
-	available []*PoolObject
+	inuse     []interface{}
+	available []interface{}
+	new       func() interface{}
 }
 
 // NewPool creates a new pool.
-func NewPool() *Pool {
-	return &Pool{}
+func NewPool(new func() interface{}) *Pool {
+	return &Pool{new: new}
 }
 
 // Acquire acquires a new PoolObject to use from the pool.
 // Here acquire creates a new instance of a PoolObject if none available.
-func (p *Pool) Acquire() *PoolObject {
+func (p *Pool) Acquire() interface{} {
 	p.Lock()
-	var object *PoolObject = nil
+	var object interface{}
 	if len(p.available) != 0 {
 		object = p.available[0]
 		p.available = append(p.available[:0], p.available[1:]...)
 		p.inuse = append(p.inuse, object)
 	} else {
-		object := &PoolObject{}
+		object := p.new()
 		p.inuse = append(p.inuse, object)
 	}
 	p.Unlock()
@@ -36,7 +33,7 @@ func (p *Pool) Acquire() *PoolObject {
 }
 
 // Release releases a PoolObject back to the Pool.
-func (p *Pool) Release(object *PoolObject) {
+func (p *Pool) Release(object interface{}) {
 	p.Lock()
 	p.available = append(p.available, object)
 	for i, v := range p.inuse {
