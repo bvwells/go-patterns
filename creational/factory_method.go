@@ -11,10 +11,11 @@ var outputWriter io.Writer = os.Stdout // modified during testing
 // StoogeType is used as a enum for stooge types.
 type StoogeType int
 
+// Names of stooges as enums.
 const (
-	Larry StoogeType = iota // Larry stooge
-	Moe                     // Moe stooge
-	Curly                   // Cutly stooge
+	Larry StoogeType = iota
+	Moe
+	Curly
 )
 
 // Stooge provides an interface for interacting with stooges.
