@@ -8,7 +8,7 @@ type Prototype interface {
 
 // concretePrototype is the first concrete instance of a prototype.
 type concretePrototype struct {
-	name     string
+	name string
 }
 
 // Name returns the name of the concreatePrototype.

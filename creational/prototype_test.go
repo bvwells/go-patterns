@@ -42,4 +42,3 @@ func TestName_WhenPrototypeIsCloned_ReturnsName(t *testing.T) {
 
 	assert.Equal(t, expectedName, actualName)
 }
-
