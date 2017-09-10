@@ -22,7 +22,7 @@ func NewPool() *Pool {
 // Here acquire creates a new instance of a PoolObject if none available.
 func (p *Pool) Acquire() *PoolObject {
 	p.Lock()
-	var object *PoolObject = nil
+	var object *PoolObject
 	if len(p.available) != 0 {
 		object = p.available[0]
 		p.available = append(p.available[:0], p.available[1:]...)
