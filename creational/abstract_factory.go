@@ -38,7 +38,7 @@ func (r *rectangle) Draw() {
 }
 
 // ShapeFactory is an interface for a factory which can be used
-// to create curved and straight shapes. 
+// to create curved and straight shapes.
 type ShapeFactory interface {
 	CreateCurvedShape() Shape
 	CreateStraightShape() Shape
