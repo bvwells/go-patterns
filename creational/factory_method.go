@@ -12,9 +12,9 @@ var outputWriter io.Writer = os.Stdout // modified during testing
 type StoogeType int
 
 const (
-	Larry StoogeType = iota
-	Moe
-	Curly
+	Larry StoogeType = iota // Larry stooge
+	Moe                     // Moe stooge
+	Curly                   // Cutly stooge
 )
 
 // Stooge provides an interface for interacting with stooges.
