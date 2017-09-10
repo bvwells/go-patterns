@@ -13,28 +13,28 @@ type circle struct {
 }
 
 func (c *circle) Draw() {
-	fmt.Printf("I am a circle.")
+	fmt.Fprintf(outputWriter, "I am a circle.")
 }
 
 type square struct {
 }
 
 func (s *square) Draw() {
-	fmt.Printf("I am a square.")
+	fmt.Fprintf(outputWriter, "I am a square.")
 }
 
 type ellipse struct {
 }
 
 func (e *ellipse) Draw() {
-	fmt.Printf("I am a ellipse.")
+	fmt.Fprintf(outputWriter, "I am an ellipse.")
 }
 
 type rectangle struct {
 }
 
 func (r *rectangle) Draw() {
-	fmt.Printf("I am a rectangle.")
+	fmt.Fprintf(outputWriter, "I am a rectangle.")
 }
 
 // ShapeFactory is an interface for a factory which can be used

@@ -2,7 +2,11 @@ package creational
 
 import (
 	"fmt"
+	"io"
+	"os"
 )
+
+var outputWriter io.Writer = os.Stdout // modified during testing
 
 type StoogeType int
 
@@ -21,21 +25,21 @@ type larry struct {
 }
 
 func (s *larry) SlapStick() {
-	fmt.Print("Larry: Poke eyes\n")
+	fmt.Fprint(outputWriter, "Larry: Poke eyes\n")
 }
 
 type moe struct {
 }
 
 func (s *moe) SlapStick() {
-	fmt.Printf("Moe: Slap head\n")
+	fmt.Fprint(outputWriter, "Moe: Slap head\n")
 }
 
 type curly struct {
 }
 
 func (s *curly) SlapStick() {
-	fmt.Printf("Curly: Suffer abuse\n")
+	fmt.Fprint(outputWriter, "Curly: Suffer abuse\n")
 }
 
 // NewStooge creates new stooges given the stooge type.
