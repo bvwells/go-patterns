@@ -7,12 +7,12 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestNewSimpleShapeFactory(t *testing.T) {
+func TestNewSimpleShapeFactory_ReturnsNonNil(t *testing.T) {
 	factory := NewSimpleShapeFactory()
 	assert.NotNil(t, factory)
 }
 
-func TestNewRobustShapeFactory(t *testing.T) {
+func TestNewRobustShapeFactory_ReturnsNonNil(t *testing.T) {
 	factory := NewRobustShapeFactory()
 	assert.NotNil(t, factory)
 }
