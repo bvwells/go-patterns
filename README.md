@@ -54,7 +54,7 @@ Bridge | Decouple an abstraction from its implementation allowing the two to var
 Composite | Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly. |
 Decorator | Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality. | Implemented
 Facade | Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use. |
-Flyweight | Use sharing to support large numbers of similar objects efficiently. |
+Flyweight | Use sharing to support large numbers of similar objects efficiently. | Implemented
 Proxy | Provide a surrogate or placeholder for another object to control access to it. | Implemented
 
 ## Behavioral [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/behavioral?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/behavioral)
