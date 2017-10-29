@@ -103,7 +103,7 @@ type ZuluTime struct {
 	Time
 }
 
-// NewCivilianTime creates a new Zulu time.
+// NewZuluTime creates a new Zulu time.
 func NewZuluTime(hour, minute, zoneID int) *Time {
 	time := &ZuluTime{}
 	time.imp = NewZuluTimeImp(hour, minute, zoneID)
