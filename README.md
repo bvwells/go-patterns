@@ -67,7 +67,6 @@ Interpretor | Given a language, define a representation for its grammar along wi
 Iterator | Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation. |
 Mediator | Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it allows their interaction to vary independently. |
 Memento | Without violating encapsulation, capture and externalize an object's internal state allowing the object to be restored to this state later. |
-Null Object | Avoid null references by providing a default object. |
 Observer | Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically. |
 State | Allow an object to alter its behavior when its internal state changes. The object will appear to change its class. |
 Strategy | Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it. |
