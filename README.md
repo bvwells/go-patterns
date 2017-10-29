@@ -50,7 +50,7 @@ Singleton | Ensure a class has only one instance, and provide a global point of 
 Name       | Description                               | Status
 -----------|-------------------------------------------|------------
 Adapter | Convert the interface of a class into another interface clients expect. An adapter lets classes work together that could not otherwise because of incompatible interfaces. The enterprise integration pattern equivalent is the translator. | Implemented
-Bridge | Decouple an abstraction from its implementation allowing the two to vary independently. |
+Bridge | Decouple an abstraction from its implementation allowing the two to vary independently. | Implemented
 Composite | Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly. | Implemented
 Decorator | Attach additional responsibilities to an object dynamically keeping the same interface. Decorators provide a flexible alternative to subclassing for extending functionality. | Implemented
 Facade | Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use. |
