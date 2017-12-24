@@ -70,7 +70,7 @@ Name       | Description                               | Status
 [`Observer`](./behavioral/observer.go) | Define a one-to-many dependency between objects where a state change in one object results in all its dependents being notified and updated automatically. | Implemented
 [`State`](./behavioral/state.go) | Allow an object to alter its behavior when its internal state changes. The object will appear to change its class. |
 [`Strategy`](./behavioral/strategy.go) | Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it. | Implemented
-[`Template Method`](./behavioral/template_method.go) | Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure. |
+[`Template Method`](./behavioral/template_method.go) | Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure. | Implemented
 [`Visitor`](./behavioral/visitor.go) | Represent an operation to be performed on the elements of an object structure. Visitor lets a new operation be defined without changing the classes of the elements on which it operates. | Implemented
 
 ## Go Versions Supported
