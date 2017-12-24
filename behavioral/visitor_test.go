@@ -2,7 +2,6 @@ package behavioral
 
 import (
 	"testing"
-	//	"github.com/stretchr/testify/assert"
 )
 
 func TestVisitor(t *testing.T) {
