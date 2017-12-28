@@ -14,9 +14,6 @@ type Iterator interface {
 
 	// Next increments the iterator to point to the next element.
 	Next()
-
-	// End sets the iterator to point to the end element.
-	End()
 }
 
 // ArrayIterator is an iterator which iterates over an array.
@@ -48,9 +45,4 @@ func (i *ArrayIterator) Next() {
 	if i.HasNext() {
 		i.index++
 	}
-}
-
-// End sets the iterator to point to the end element.
-func (i *ArrayIterator) End() {
-	i.index = len(i.array) - 1
 }
