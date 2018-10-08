@@ -6,7 +6,7 @@ import (
 
 // Expression represents an expression to evaluate.
 type Expression interface {
-	Interpret(variables *map[string]Expression) int
+	Interpret(variables map[string]Expression) int
 }
 
 // Integer represents an integer number.
@@ -15,7 +15,7 @@ type Integer struct {
 }
 
 // Interpret returns the integer representation of the number.
-func (n *Integer) Interpret(variables *map[string]Expression) int {
+func (n *Integer) Interpret(variables map[string]Expression) int {
 	return n.integer
 }
 
@@ -26,7 +26,7 @@ type Plus struct {
 }
 
 // Interpret interprets by adding the left and right variables.
-func (p *Plus) Interpret(variables *map[string]Expression) int {
+func (p *Plus) Interpret(variables map[string]Expression) int {
 	return p.leftOperand.Interpret(variables) + p.rightOperand.Interpret(variables)
 }
 
@@ -37,7 +37,7 @@ type Minus struct {
 }
 
 // Interpret interprets by subtracting the right from left variables.
-func (m *Minus) Interpret(variables *map[string]Expression) int {
+func (m *Minus) Interpret(variables map[string]Expression) int {
 	return m.leftOperand.Interpret(variables) - m.rightOperand.Interpret(variables)
 }
 
@@ -47,8 +47,8 @@ type Variable struct {
 }
 
 // Interpret looks up the variable value and returns it, if not found returns zero.
-func (v *Variable) Interpret(variables *map[string]Expression) int {
-	value, found := (*variables)[v.name]
+func (v *Variable) Interpret(variables map[string]Expression) int {
+	value, found := variables[v.name]
 	if found == false {
 		return 0
 	}
@@ -83,7 +83,7 @@ func NewEvaluator(expression string) *Evaluator {
 }
 
 // Interpret interprets the expression syntax tree.
-func (e *Evaluator) Interpret(context *map[string]Expression) int {
+func (e *Evaluator) Interpret(context map[string]Expression) int {
 	return e.syntaxTree.Interpret(context)
 }
 

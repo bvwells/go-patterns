@@ -13,6 +13,6 @@ func TestInterpreter(t *testing.T) {
 	variables["w"] = &Integer{5}
 	variables["x"] = &Integer{10}
 	variables["z"] = &Integer{42}
-	result := sentence.Interpret(&variables)
+	result := sentence.Interpret(variables)
 	assert.Equal(t, -27, result)
 }
