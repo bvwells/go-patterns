@@ -8,6 +8,8 @@
 
 Design patterns for the Go programming language.
 
+![Gopher jigsaw](jigsaw.png)
+
 ``` go
 import "github.com/bvwells/go-patterns"
 ```
