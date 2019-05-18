@@ -8,6 +8,7 @@ import (
 )
 
 func TestNewBasicTimeImp_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	impl := NewBasicTimeImp(1, 2)
 	assert.NotNil(t, impl)
 }
@@ -23,6 +24,7 @@ func TestBasicTimeImplTell_TellsTime(t *testing.T) {
 }
 
 func TestNewCivilianTimeImp_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	impl := NewCivilianTimeImp(1, 2, false)
 	assert.NotNil(t, impl)
 }
@@ -48,6 +50,7 @@ func TestCivilianTimeImpTell_TellsPMTime(t *testing.T) {
 }
 
 func TestNewZuluTimeImp_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	impl := NewZuluTimeImp(1, 2, 5)
 	assert.NotNil(t, impl)
 }
@@ -83,6 +86,7 @@ func TestZuluTimeImpTell_TellsTime(t *testing.T) {
 }
 
 func TestTell_TellsTime(t *testing.T) {
+	t.Parallel()
 	times := make([]*Time, 3, 3)
 	times[0] = NewTime(14, 30)
 	times[1] = NewCivilianTime(2, 30, true)

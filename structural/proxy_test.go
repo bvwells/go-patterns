@@ -8,11 +8,13 @@ import (
 )
 
 func TestNewProxyTask_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	proxy := NewProxyTask()
 	assert.NotNil(t, proxy)
 }
 
 func TestNewProxyTask_SetsTask(t *testing.T) {
+	t.Parallel()
 	proxy := NewProxyTask()
 	assert.NotNil(t, proxy.task)
 }

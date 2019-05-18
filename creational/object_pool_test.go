@@ -7,11 +7,13 @@ import (
 )
 
 func TestNewPool_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	pool := NewPool(nil)
 	assert.NotNil(t, pool)
 }
 
 func TestNewPool_SetsNewFunc(t *testing.T) {
+	t.Parallel()
 	expectedNew := func() interface{} {
 		return float64(10.0)
 	}
@@ -20,6 +22,7 @@ func TestNewPool_SetsNewFunc(t *testing.T) {
 }
 
 func TestAcquire_AddsInstanceToInUse(t *testing.T) {
+	t.Parallel()
 	expectedNew := func() interface{} {
 		return float64(10.0)
 	}
@@ -29,6 +32,7 @@ func TestAcquire_AddsInstanceToInUse(t *testing.T) {
 }
 
 func TestAcquire_DoesNotAddsInstanceToAvailable(t *testing.T) {
+	t.Parallel()
 	expectedNew := func() interface{} {
 		return float64(10.0)
 	}
@@ -38,6 +42,7 @@ func TestAcquire_DoesNotAddsInstanceToAvailable(t *testing.T) {
 }
 
 func TestAcquire_UsesAvailableInstanceIfAvailable(t *testing.T) {
+	t.Parallel()
 	expectedNew := func() interface{} {
 		return 10.0
 	}
@@ -50,6 +55,7 @@ func TestAcquire_UsesAvailableInstanceIfAvailable(t *testing.T) {
 }
 
 func TestRelease_AddsInstanceToAvailable(t *testing.T) {
+	t.Parallel()
 	expectedNew := func() interface{} {
 		return float64(10.0)
 	}
@@ -61,6 +67,7 @@ func TestRelease_AddsInstanceToAvailable(t *testing.T) {
 }
 
 func TestRelease_RemovesInstanceFromInUse(t *testing.T) {
+	t.Parallel()
 	expectedNew := func() interface{} {
 		return 10.0
 	}

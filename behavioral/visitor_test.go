@@ -5,6 +5,7 @@ import (
 )
 
 func TestVisitor(t *testing.T) {
+	t.Parallel()
 
 	list := []Element{&This{}, &That{}, &TheOther{}}
 

@@ -7,22 +7,26 @@ import (
 )
 
 func TestNewFlyweight_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	flyweight := NewFlyweight("McFly")
 	assert.NotNil(t, flyweight)
 }
 
 func TestNewFlyweight_SetsName(t *testing.T) {
+	t.Parallel()
 	name := "McFly"
 	flyweight := NewFlyweight(name)
 	assert.Equal(t, name, flyweight.Name)
 }
 
 func TestNewFlyweightFactory_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	factory := NewFlyweightFactory()
 	assert.NotNil(t, factory)
 }
 
 func TestGetFlyweight_WhenFlyweightDoesNotExist_CreatesAndReturnsNewInstance(t *testing.T) {
+	t.Parallel()
 	factory := NewFlyweightFactory()
 	marty := factory.GetFlyweight("Marty McFly")
 	george := factory.GetFlyweight("George McFly")
@@ -32,6 +36,7 @@ func TestGetFlyweight_WhenFlyweightDoesNotExist_CreatesAndReturnsNewInstance(t *
 }
 
 func TestGetFlyweight_WhenFlyweightAlreadyExists_ReturnsInstance(t *testing.T) {
+	t.Parallel()
 	factory := NewFlyweightFactory()
 	marty := factory.GetFlyweight("McFly")
 	george := factory.GetFlyweight("McFly")

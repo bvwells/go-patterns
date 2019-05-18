@@ -8,6 +8,7 @@ import (
 )
 
 func TestNewStrategyA_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	strategy := NewStrategyA()
 	assert.NotNil(t, strategy)
 }
@@ -24,6 +25,7 @@ func TestStrategyAExecute_ExecutesStrategyA(t *testing.T) {
 }
 
 func TestNewStrategyB_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	strategy := NewStrategyB()
 	assert.NotNil(t, strategy)
 }
@@ -40,11 +42,13 @@ func TestStrategyBExecute_ExecutesStrategyB(t *testing.T) {
 }
 
 func TestNewContext_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	context := NewContext()
 	assert.NotNil(t, context)
 }
 
 func TestSetStrategy_SetsStrategy(t *testing.T) {
+	t.Parallel()
 	strategy := NewStrategyB()
 	context := NewContext()
 	context.SetStrategy(strategy)
