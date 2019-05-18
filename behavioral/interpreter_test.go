@@ -7,6 +7,7 @@ import (
 )
 
 func TestInterpreter(t *testing.T) {
+	t.Parallel()
 	expression := "w x z - +"
 	sentence := NewEvaluator(expression)
 	variables := make(map[string]Expression)

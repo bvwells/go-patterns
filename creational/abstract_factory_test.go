@@ -8,16 +8,19 @@ import (
 )
 
 func TestNewSimpleShapeFactory_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	factory := NewSimpleShapeFactory()
 	assert.NotNil(t, factory)
 }
 
 func TestNewRobustShapeFactory_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	factory := NewRobustShapeFactory()
 	assert.NotNil(t, factory)
 }
 
 func TestCreateCurvedShape_WhenFactoryIsSimple_ReturnsCircle(t *testing.T) {
+	t.Parallel()
 	factory := NewSimpleShapeFactory()
 	shape := factory.CreateCurvedShape()
 	_, ok := shape.(*circle)
@@ -25,7 +28,6 @@ func TestCreateCurvedShape_WhenFactoryIsSimple_ReturnsCircle(t *testing.T) {
 }
 
 func TestDraw_WhenFactoryIsSimpleAndCreateCurvedShapeIsCalled_PrintsCircleDrawMessage(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()
@@ -37,6 +39,7 @@ func TestDraw_WhenFactoryIsSimpleAndCreateCurvedShapeIsCalled_PrintsCircleDrawMe
 }
 
 func TestCreateStraightShape_WhenFactoryIsSimple_ReturnsSquare(t *testing.T) {
+	t.Parallel()
 	factory := NewSimpleShapeFactory()
 	shape := factory.CreateStraightShape()
 	_, ok := shape.(*square)
@@ -44,7 +47,6 @@ func TestCreateStraightShape_WhenFactoryIsSimple_ReturnsSquare(t *testing.T) {
 }
 
 func TestDraw_WhenFactoryIsSimpleAndCreateStraightShapeIsCalled_PrintsSquareDrawMessage(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()
@@ -56,6 +58,7 @@ func TestDraw_WhenFactoryIsSimpleAndCreateStraightShapeIsCalled_PrintsSquareDraw
 }
 
 func TestCreateCurvedShape_WhenFactoryIsRobust_ReturnsEllipse(t *testing.T) {
+	t.Parallel()
 	factory := NewRobustShapeFactory()
 	shape := factory.CreateCurvedShape()
 	_, ok := shape.(*ellipse)
@@ -63,7 +66,6 @@ func TestCreateCurvedShape_WhenFactoryIsRobust_ReturnsEllipse(t *testing.T) {
 }
 
 func TestDraw_WhenFactoryIsRobustAndCreateCurvedShapeIsCalled_PrintsEllipseDrawMessage(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()
@@ -75,6 +77,7 @@ func TestDraw_WhenFactoryIsRobustAndCreateCurvedShapeIsCalled_PrintsEllipseDrawM
 }
 
 func TestCreateStraightShape_WhenFactoryIsRobust_ReturnsRectangle(t *testing.T) {
+	t.Parallel()
 	factory := NewRobustShapeFactory()
 	shape := factory.CreateStraightShape()
 	_, ok := shape.(*rectangle)
@@ -82,7 +85,6 @@ func TestCreateStraightShape_WhenFactoryIsRobust_ReturnsRectangle(t *testing.T) 
 }
 
 func TestDraw_WhenFactoryIsRobustAndCreateStraightShapeIsCalled_PrintsRectangleDrawMessage(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()

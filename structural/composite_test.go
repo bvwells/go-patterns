@@ -8,22 +8,26 @@ import (
 )
 
 func TestNewLeaf_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	leaf := NewLeaf(10)
 	assert.NotNil(t, leaf)
 }
 
 func TestNewLeaf_SetsValue(t *testing.T) {
+	t.Parallel()
 	value := 42
 	leaf := NewLeaf(value)
 	assert.Equal(t, value, leaf.value)
 }
 
 func TestNewComposite_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	composite := NewComposite()
 	assert.NotNil(t, composite)
 }
 
 func TestAdd_AddsNewContainer(t *testing.T) {
+	t.Parallel()
 	composite := NewComposite()
 	leaf1 := NewLeaf(10)
 	composite.Add(leaf1)
@@ -39,6 +43,7 @@ func TestAdd_AddsNewContainer(t *testing.T) {
 }
 
 func TestTraverse(t *testing.T) {
+	t.Parallel()
 	containers := make([]Composite, 4, 4)
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 3; j++ {

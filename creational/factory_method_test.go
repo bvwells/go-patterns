@@ -8,6 +8,7 @@ import (
 )
 
 func TestNewStooge_WhenStoogeTypeIsLarry_ReturnsLarry(t *testing.T) {
+	t.Parallel()
 	stooge := NewStooge(Larry)
 	assert.NotNil(t, stooge)
 	_, ok := stooge.(*larry)
@@ -15,6 +16,7 @@ func TestNewStooge_WhenStoogeTypeIsLarry_ReturnsLarry(t *testing.T) {
 }
 
 func TestNewStooge_WhenStoogeTypeIsMoe_ReturnsMoe(t *testing.T) {
+	t.Parallel()
 	stooge := NewStooge(Moe)
 	assert.NotNil(t, stooge)
 	_, ok := stooge.(*moe)
@@ -22,6 +24,7 @@ func TestNewStooge_WhenStoogeTypeIsMoe_ReturnsMoe(t *testing.T) {
 }
 
 func TestNewStooge_WhenStoogeTypeIsCurly_ReturnsCurly(t *testing.T) {
+	t.Parallel()
 	stooge := NewStooge(Curly)
 	assert.NotNil(t, stooge)
 	_, ok := stooge.(*curly)
@@ -29,6 +32,7 @@ func TestNewStooge_WhenStoogeTypeIsCurly_ReturnsCurly(t *testing.T) {
 }
 
 func TestNewStooge_WhenStoogeTypeIsNotRecognised_ReturnsNil(t *testing.T) {
+	t.Parallel()
 	stooge := NewStooge(10)
 	assert.Nil(t, stooge)
 }

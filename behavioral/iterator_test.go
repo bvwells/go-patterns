@@ -5,6 +5,7 @@ import (
 )
 
 func TestIterator(t *testing.T) {
+	t.Parallel()
 
 	array := []interface{}{10.0, 20.0, 30.0, 40.0, 50.0}
 

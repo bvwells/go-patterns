@@ -8,6 +8,7 @@ import (
 )
 
 func TestNewEventObserver_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	observer := NewEventObserver("peeping tom")
 	assert.NotNil(t, observer)
 }
@@ -25,11 +26,13 @@ func TestOnNotify_LogsMessage(t *testing.T) {
 }
 
 func TestNewEventNotifer_ReturnsNonNil(t *testing.T) {
+	t.Parallel()
 	notifier := NewEventNotifier()
 	assert.NotNil(t, notifier)
 }
 
 func TestRegister_RegistersObservers(t *testing.T) {
+	t.Parallel()
 	notifier := NewEventNotifier()
 	observers := []EventObserver{
 		NewEventObserver("tom"),
@@ -48,6 +51,7 @@ func TestRegister_RegistersObservers(t *testing.T) {
 }
 
 func TestDeregister_DeregistersObservers(t *testing.T) {
+	t.Parallel()
 	notifier := NewEventNotifier()
 	observers := []EventObserver{
 		NewEventObserver("tom"),

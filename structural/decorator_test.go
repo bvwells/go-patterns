@@ -6,6 +6,7 @@ import (
 )
 
 func TestLogDecorate(t *testing.T) {
+	t.Parallel()
 
 	decorator := LogDecorate(func(taskID int) int {
 		log.Printf("Task with ID %v is running....", taskID)

@@ -7,6 +7,7 @@ import (
 )
 
 func TestMemento(t *testing.T) {
+	t.Parallel()
 
 	n := NewNumber(10)
 	n.Dubble()
