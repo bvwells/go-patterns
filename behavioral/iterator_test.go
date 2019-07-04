@@ -14,7 +14,7 @@ func TestIterator(t *testing.T) {
 	for it := iterator; iterator.HasNext(); iterator.Next() {
 		index, value := it.Index(), it.Value().(float64)
 		if value != array[index] {
-			t.Errorf("Expected array value to equal %v, but recieved %v", array[index], value)
+			t.Errorf("Expected array value to equal %v, but received %v", array[index], value)
 		}
 	}
 }
