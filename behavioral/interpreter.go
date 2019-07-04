@@ -30,7 +30,7 @@ func (p *Plus) Interpret(variables map[string]Expression) int {
 	return p.leftOperand.Interpret(variables) + p.rightOperand.Interpret(variables)
 }
 
-// Minus represents the substraction operation.
+// Minus represents the subtraction operation.
 type Minus struct {
 	leftOperand  Expression
 	rightOperand Expression
