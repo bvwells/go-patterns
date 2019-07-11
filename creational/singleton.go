@@ -4,7 +4,7 @@ import (
 	"sync"
 )
 
-// Singleton deacribes a struct of which only a single
+// Singleton describes a struct of which only a single
 // instance can exist.
 type Singleton struct {
 }
