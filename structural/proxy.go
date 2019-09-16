@@ -15,7 +15,6 @@ type ITask interface {
 
 // Task implements the ITask interface for performing tasks.
 type Task struct {
-	taskName string
 }
 
 // Execute implements the task.

@@ -8,7 +8,7 @@ import (
 
 func TestName_ReturnsName(t *testing.T) {
 	t.Parallel()
-	expectedName := "prototype instance"
+	const expectedName = "prototype instance"
 
 	proto := concretePrototype{expectedName}
 	actualName := proto.Name()
@@ -18,7 +18,7 @@ func TestName_ReturnsName(t *testing.T) {
 
 func TestClone_ReturnsNonNil(t *testing.T) {
 	t.Parallel()
-	name := "prototype instance"
+	const name = "prototype instance"
 
 	proto := concretePrototype{name}
 	newProto := proto.Clone()
@@ -38,7 +38,7 @@ func TestClone_ReturnsDifferentInstance(t *testing.T) {
 
 func TestName_WhenPrototypeIsCloned_ReturnsName(t *testing.T) {
 	t.Parallel()
-	expectedName := "prototype instance"
+	const expectedName = "prototype instance"
 
 	proto := concretePrototype{expectedName}
 	newProto := proto.Clone()

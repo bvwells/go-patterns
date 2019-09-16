@@ -44,7 +44,7 @@ func TestAdd_AddsNewContainer(t *testing.T) {
 
 func TestTraverse(t *testing.T) {
 	t.Parallel()
-	containers := make([]Composite, 4, 4)
+	containers := make([]Composite, 4)
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 3; j++ {
 			containers[i].Add(NewLeaf(i*3 + j))

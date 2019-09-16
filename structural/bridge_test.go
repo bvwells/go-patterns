@@ -87,7 +87,7 @@ func TestZuluTimeImpTell_TellsTime(t *testing.T) {
 
 func TestTell_TellsTime(t *testing.T) {
 	t.Parallel()
-	times := make([]*Time, 3, 3)
+	times := make([]*Time, 3)
 	times[0] = NewTime(14, 30)
 	times[1] = NewCivilianTime(2, 30, true)
 	times[2] = NewZuluTime(14, 30, 6)

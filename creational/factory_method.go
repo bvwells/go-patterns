@@ -47,11 +47,12 @@ func (s *curly) SlapStick() {
 // NewStooge creates new stooges given the stooge type.
 // Nil is returned if the stooge type is not recognised.
 func NewStooge(stooge StoogeType) Stooge {
-	if stooge == Larry {
+	switch stooge {
+	case Larry:
 		return &larry{}
-	} else if stooge == Moe {
+	case Moe:
 		return &moe{}
-	} else if stooge == Curly {
+	case Curly:
 		return &curly{}
 	}
 	return nil

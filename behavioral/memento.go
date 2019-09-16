@@ -27,7 +27,7 @@ func (n *Number) Dubble() {
 
 // Half halves the value of the number.
 func (n *Number) Half() {
-	n.value = n.value / 2
+	n.value /= 2
 }
 
 // Value returns the value of the number.

@@ -49,7 +49,7 @@ type Variable struct {
 // Interpret looks up the variable value and returns it, if not found returns zero.
 func (v *Variable) Interpret(variables map[string]Expression) int {
 	value, found := variables[v.name]
-	if found == false {
+	if !found {
 		return 0
 	}
 	return value.Interpret(variables)
@@ -64,17 +64,18 @@ type Evaluator struct {
 func NewEvaluator(expression string) *Evaluator {
 	expressionStack := new(Stack)
 	for _, token := range strings.Split(expression, " ") {
-		if token == "+" {
+		switch token {
+		case "+":
 			right := expressionStack.Pop().(Expression)
 			left := expressionStack.Pop().(Expression)
 			subExpression := &Plus{left, right}
 			expressionStack.Push(subExpression)
-		} else if token == "-" {
+		case "-":
 			right := expressionStack.Pop().(Expression)
 			left := expressionStack.Pop().(Expression)
 			subExpression := &Minus{left, right}
 			expressionStack.Push(subExpression)
-		} else {
+		default:
 			expressionStack.Push(&Variable{token})
 		}
 	}

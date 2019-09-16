@@ -34,10 +34,7 @@ func (i *ArrayIterator) Value() interface{} {
 
 // HasNext returns whether another next element exists.
 func (i *ArrayIterator) HasNext() bool {
-	if i.index+1 == len(i.array) {
-		return false
-	}
-	return true
+	return i.index+1 != len(i.array)
 }
 
 // Next increments the iterator to point to the next element.
