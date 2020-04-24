@@ -8,7 +8,6 @@ import (
 )
 
 func TestState(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()
@@ -24,5 +23,4 @@ func TestState(t *testing.T) {
 		"   going from OFF to ON\n"+
 		"   already ON\n"+
 		"   going from ON to OFF\n", outputWriter.(*bytes.Buffer).String())
-
 }

@@ -39,7 +39,7 @@ func (t *That) Accept(v Visitor) {
 type TheOther struct {
 }
 
-// TheOther returns 'TheOther' as a string./
+// TheOther returns 'TheOther' as a string.
 func (t *TheOther) TheOther() string {
 	return "TheOther"
 }

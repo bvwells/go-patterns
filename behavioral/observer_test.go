@@ -71,7 +71,6 @@ func TestDeregister_DeregistersObservers(t *testing.T) {
 }
 
 func TestNotify_NotifiesObservers(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()

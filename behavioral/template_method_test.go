@@ -8,7 +8,6 @@ import (
 )
 
 func TestTemplateMethod(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()

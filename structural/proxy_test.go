@@ -20,7 +20,6 @@ func TestNewProxyTask_SetsTask(t *testing.T) {
 }
 
 func TestExecute_WhenTaskTypeIsRun_ExecutesTaskExecute(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()
@@ -32,7 +31,6 @@ func TestExecute_WhenTaskTypeIsRun_ExecutesTaskExecute(t *testing.T) {
 }
 
 func TestExecute_WhenTaskTypeIsNotRun_DoesNotExecuteTaskExecute(t *testing.T) {
-
 	bufferOutputWriter := outputWriter
 	outputWriter = new(bytes.Buffer)
 	defer func() { outputWriter = bufferOutputWriter }()
