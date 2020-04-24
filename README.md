@@ -5,7 +5,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/ea2u4hpy555b6ady?svg=true)](https://ci.appveyor.com/project/bvwells/go-patterns)
 [![codecov](https://codecov.io/gh/bvwells/go-patterns/branch/master/graph/badge.svg)](https://codecov.io/gh/bvwells/go-patterns)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bvwells/go-patterns)](https://goreportcard.com/report/github.com/bvwells/go-patterns)
-[![GolangCI](https://golangci.com/badges/github.com/bvwells/go-patterns.svg)](https://golangci.com/r/github.com/bvwells/go-patterns)
 
 Design patterns for the Go programming language.
 
