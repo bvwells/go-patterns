@@ -4,21 +4,18 @@ os:
   - linux
   
 go: 
-  - "1.12.x"
-  - "1.13.x"
+  - "1.14.x"
   - tip
 
 env:
   - GO111MODULE=on
 
 install:
-  - go get -u golang.org/x/lint/golint
-  - go get -u golang.org/x/tools/cmd/goimports
+  - go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
   
 script:
  - ./test.sh
- - go vet ./...
- - diff <(golint ./...) <(printf "")
+ - golangci-lint run
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
