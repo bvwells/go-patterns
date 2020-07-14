@@ -22,7 +22,7 @@ To install the packages on your system,
 $ go get -u github.com/bvwells/go-patterns/...
 ```
 
-Documentation and examples are available at http://godoc.org/github.com/bvwells/go-patterns
+Documentation and examples are available at https://pkg.go.dev/github.com/bvwells/go-patterns?tab=overview
 
  * [Design Patterns](#design-patterns)
  * [Creational](#creational)
@@ -38,7 +38,7 @@ Creational | [`github.com/bvwells/go-patterns/creational`][creational-ref] | Cre
 Structural | [`github.com/bvwells/go-patterns/structural`][structural-ref] | Structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
 Behavioral | [`github.com/bvwells/go-patterns/behavioral`][behavioral-ref] | Behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 
-## Creational [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/creational?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/creational)
+## Creational [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/bvwells/go-patterns/creational?tab=overview)
 
 Name       | Description                               
 -----------|-------------------------------------------
@@ -49,7 +49,7 @@ Name       | Description
 [`Prototype`](./creational/prototype.go) | Specify the kinds of objects to create using a prototypical instance, and create new objects from the 'skeleton' of an existing object, thus boosting performance and keeping memory footprints to a minimum.
 [`Singleton`](./creational/singleton.go) | Ensure a class has only one instance, and provide a global point of access to it.
 
-## Structural [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/structural?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/structutal)
+## Structural [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/bvwells/go-patterns/structural?tab=overview)
 
 Name       | Description                               
 -----------|-------------------------------------------
@@ -61,7 +61,7 @@ Name       | Description
 [`Flyweight`](./structural/flyweight.go) | Use sharing to support large numbers of similar objects efficiently.
 [`Proxy`](./structural/proxy.go) | Provide a surrogate or placeholder for another object to control access to it.
 
-## Behavioral [![GoDoc](https://godoc.org/github.com/bvwells/go-patterns/behavioral?status.svg)](https://godoc.org/github.com/bvwells/go-patterns/behavioral)
+## Behavioral [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/bvwells/go-patterns/behavioral?tab=overview)
 
 Name       | Description                               
 -----------|-------------------------------------------
@@ -83,6 +83,6 @@ The most recent major version of Go is supported. You can see which versions are
 currently supported by looking at the lines following `go:` in
 [`.travis.yml`](.travis.yml).
 
-[creational-ref]: https://godoc.org/github.com/bvwells/go-patterns/creational
-[structural-ref]: https://godoc.org/github.com/bvwells/go-patterns/structural
-[behavioral-ref]: https://godoc.org/github.com/bvwells/go-patterns/behavioral
+[creational-ref]: https://pkg.go.dev/github.com/bvwells/go-patterns/creational?tab=overview
+[structural-ref]: https://pkg.go.dev/github.com/bvwells/go-patterns/structural?tab=overview
+[behavioral-ref]: https://pkg.go.dev/github.com/bvwells/go-patterns/behavioral?tab=overview
