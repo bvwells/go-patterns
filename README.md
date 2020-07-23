@@ -34,9 +34,9 @@ Documentation and examples are available at https://pkg.go.dev/github.com/bvwell
 
 Pattern    | Package                                   | Description
 -----------|-------------------------------------------|------------
-Creational | [`github.com/bvwells/go-patterns/creational`][creational-ref] | Creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or in added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
-Structural | [`github.com/bvwells/go-patterns/structural`][structural-ref] | Structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
-Behavioral | [`github.com/bvwells/go-patterns/behavioral`][behavioral-ref] | Behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
+Creational | [`creational`][creational-ref] | Creational design patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The basic form of object creation could result in design problems or in added complexity to the design. Creational design patterns solve this problem by somehow controlling this object creation.
+Structural | [`structural`][structural-ref] | Structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
+Behavioral | [`behavioral`][behavioral-ref] | Behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 
 ## Creational [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/bvwells/go-patterns/creational?tab=overview)
 
