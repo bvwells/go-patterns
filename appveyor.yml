@@ -1,17 +1,16 @@
 version: "{build}"
 
-os: Windows Server 2012 R2
+build: off
 
 clone_folder: c:\github.com\bvwells\go-patterns
+
+stack: go 1.17.1
 
 install:
   - echo %PATH%
   - echo %GOPATH%
   - go version
   - go env
-
-build_script:
- - go install -v ./...
 
 test_script:
  - go test -race -v ./...
