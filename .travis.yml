@@ -8,11 +8,15 @@ go:
   - tip
 
 install:
+  - echo $PATH
+  - echo $GOPATH
+  - go version
+  - go env
   - go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.42.1
 
 script:
  - ./test.sh
- - golangci-lint run
+ - golangci-lint run ./...
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
