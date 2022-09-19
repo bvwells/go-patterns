@@ -4,7 +4,6 @@ run:
 
 linters:
   enable:
-    - deadcode
     - errcheck
     - gofmt
     - goimports
@@ -14,9 +13,7 @@ linters:
     - misspell
     - nakedret
     - staticcheck
-    - structcheck
     - unused
-    - varcheck
     - whitespace
 
 linter-settings:

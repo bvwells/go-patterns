@@ -4,7 +4,7 @@ os:
   - linux
   
 go: 
-  - "1.17.x"
+  - "1.19.x"
   - tip
 
 install:
@@ -12,7 +12,7 @@ install:
   - echo $GOPATH
   - go version
   - go env
-  - go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.42.1
+  - go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.49.0
 
 script:
  - ./test.sh
