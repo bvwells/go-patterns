@@ -3,7 +3,7 @@
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/bvwells/go-patterns?tab=overview)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/bvwells/go-patterns)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bvwells/go-patterns) 
-[![Build Status](https://travis-ci.com/bvwells/go-patterns.svg?branch=master)](https://travis-ci.com/bvwells/go-patterns)
+[![Build Status](https://app.travis-ci.com/bvwells/go-patterns.svg?branch=master)](https://app.travis-ci.com/bvwells/go-patterns)
 [![Build status](https://ci.appveyor.com/api/projects/status/ea2u4hpy555b6ady?svg=true)](https://ci.appveyor.com/project/bvwells/go-patterns)
 [![codecov](https://codecov.io/gh/bvwells/go-patterns/branch/master/graph/badge.svg)](https://codecov.io/gh/bvwells/go-patterns)
 [![Go Report Card](https://goreportcard.com/badge/github.com/bvwells/go-patterns)](https://goreportcard.com/report/github.com/bvwells/go-patterns)
