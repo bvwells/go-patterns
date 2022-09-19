@@ -5,7 +5,6 @@ os:
   
 go: 
   - "1.19.x"
-  - tip
 
 install:
   - echo $PATH
