@@ -4,14 +4,15 @@ os:
   - linux
   
 go: 
-  - "1.19.x"
+  - "1.20.x"
 
 install:
   - echo $PATH
   - echo $GOPATH
   - go version
   - go env
-  - go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.49.0
+  - curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.52.2
+  - golangci-lint --version
 
 script:
  - ./test.sh

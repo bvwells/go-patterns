@@ -4,7 +4,7 @@ build: off
 
 clone_folder: c:\github.com\bvwells\go-patterns
 
-stack: go 1.19.1
+stack: go 1.20.3
 
 install:
   - echo %PATH%
